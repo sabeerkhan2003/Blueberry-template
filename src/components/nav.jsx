@@ -48,8 +48,8 @@ function Nav() {
             {/* nav1 */}
             <div className='lg:flex lg:flex-row lg:items-center lg:justify-center lg:gap-[8%] lg:mt-4 flex flex-col md:flex-row md:gap-5'>
                 <div className='lg:flex lg:gap-12 mt-4 relative lg:static md:flex md:h-12 md:justify-around'>
-                    <img src={logo} alt="Logo" className='ml-4 lg:ml-0' />
-                    <AiOutlineAppstore className='lg:hidden text-[#6C7FD8] absolute lg:static right-8 top-2 size-8 md:left-[38%]' />
+                    <img src={logo} alt="Logo" className='ml-6 lg:ml-0' />
+                    <AiOutlineAppstore className='lg:hidden text-[#6C7FD8] absolute lg:static right-5 top-2 size-8 md:left-[38%]' />
                     <div className='flex md:justify-center md:items-center top-0'>
                         <div className='relative lg:flex border-2 p-3 rounded-l-lg items-center hidden lg:h-12'>
                             <input placeholder='Vegetables' readOnly onClick={() => toggleDropdown("vegetable")} className="cursor-pointer outline-none" />
