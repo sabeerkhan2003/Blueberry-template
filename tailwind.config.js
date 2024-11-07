@@ -8,8 +8,20 @@ export default {
     extend: {
       fontFamily: {
         poppins: ['Poppins', 'sans-serif'],
+        quicksand: ['Quicksand', 'sans-serif'],
       },
     },
   },
-  plugins: [],
+  plugins: [
+    function({ addUtilities }) {
+      addUtilities({
+        '.text-stroke': {
+          '-webkit-text-stroke': '1px #DCDDDE',
+        },
+        '.text-stroke-lg': {
+          '-webkit-text-stroke': '1px grey',
+        },
+      });
+    },
+  ],
 }

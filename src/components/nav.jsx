@@ -55,9 +55,9 @@ function Nav() {
                             <input placeholder='Vegetables' readOnly onClick={() => toggleDropdown("vegetable")} className="cursor-pointer outline-none" />
                             <IoIosArrowDown onClick={() => toggleDropdown("vegetable")} className="text-[#565656] lg:size-5 cursor-pointer" />
                             {dropdownsVisible.vegetable && (
-                                <div className="absolute top-full mt-1 w-full bg-white border border-gray-300 rounded-lg shadow-lg">
+                                <div className="absolute top-full mt-1 w-full bg-white border border-gray-300 rounded-lg shadow-lg z-20">
                                     {Vegetables.map((item, index) => (
-                                        <p key={index} className="p-2 hover:bg-gray-100 cursor-pointer text-gray-500">{item.name}</p>
+                                        <p key={index} className="p-2 hover:bg-gray-100 cursor-pointer text-gray-500 ">{item.name}</p>
                                     ))}
                                 </div>
                             )}
