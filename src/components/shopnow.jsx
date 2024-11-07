@@ -31,7 +31,7 @@ function Shopnow() {
                     </div>
                 </div>
 
-                <div className='relative mt-20 flex justify-center pb-56 lg:pb-0 '>
+                <div className='relative mt-32 lg:mt-20 flex justify-center pb-56 lg:pb-0 '>
                     <img src={banner} alt="banner" className='scale-[200%]  lg:scale-100 lg:h-[80%] md:h-[50%] md:mt-28 lg:mt-0 lg:w-full' />
                     <div className='font-quicksand bg-white p-5  absolute bottom-5 lg:bottom-32 md:bottom-56 md:right-20 lg:right-24 flex flex-col gap-2 lg:gap-3 w-[220px] lg:w-[350px] rounded-3xl'>
                         <span className='text-[#6C7FD8] font-semibold text-[16px] lg:text-[20px]' >25% Off</span>
