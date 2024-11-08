@@ -9,6 +9,7 @@ import Vendors from '../components/vendors'
 import 'aos/dist/aos.css'
 import Brands from '../components/brands'
 import Insta from '../components/insta'
+import Insta2 from '../components/insta2'
 
 
 function Home() {
@@ -21,6 +22,7 @@ function Home() {
             <Shopnow/>
             <Vendors/>
             <Insta/>
+            <Insta2/>
             <Brands/>
             <Footer/>
         </>

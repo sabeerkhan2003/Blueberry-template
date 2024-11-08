@@ -132,7 +132,7 @@ function Footer() {
           </div>
 
           {/* Contact Section */}
-          <div>
+          <div className='lg:w-60'>
             <div className="flex justify-between ml-5 mr-5 lg:w-fit">
               <h4 className="text-lg font-semibold">Contact</h4>
               <IoChevronDown
@@ -143,12 +143,12 @@ function Footer() {
             <ul
               className={`lg:flex lg:flex-col gap-1 my-6 transition-all duration-300 ease-in-out overflow-hidden ${isOpen ? 'max-h-[500px]' : 'max-h-0'} lg:max-h-[500px]`}
             >
-              <li className="flex flex-col gap-3 ml-5">
-                <div className="flex items-center ml- gap-3 lg:w-64">
+              <li className="flex flex-col gap-3 ml-5 lg:ml-0">
+                <div className="flex items-center ml- gap-3 lg:w-64 xl:w-60">
                   <MdOutlineLocationOn className="text-[#6C7FD8] size-7 lg:size-9 ml- " />
-                  <p className="text-[#686E7D] w-full font-poppins text-sm lg:w-96">
+                  <a className="text-[#686E7D] w-full font-poppins text-sm lg:w-96 inline">
                     971 Lajamni, Motavarachha, Surat, Gujarat, Bharat 394101.
-                  </p>
+                  </a>
                 </div>
                 <div className="flex items-center ml-1 gap-3 lg:w-64">
                   <FaWhatsapp className="text-[#6C7FD8]  size-5 lg:size-7" />

@@ -59,3 +59,32 @@
   
 //   export default Insta;
   
+
+
+// function Insta() {
+//   return (
+//     <div className='flex overflow-auto w-full gap-10'>
+//       {[i1, i2, i3, i4].map((image, index) => (
+//         <div key={index} className='relative h-72 w-72'>
+//           {/* Image Section */}
+//           <img src={image} alt={`Instagram ${index + 1}`} className='rounded-3xl  h-32 w-72 object-cover' />
+
+//           {/* Overlay Section */}
+//           <div className='bg-[#FFFFFFEF] border-2 flex flex-col p-3 rounded-3xl absolute bottom-5 left-5 right-5 '>
+//             <span className='font-Poppins font-normal text-[13px] leading-[26px] tracking-[0.02rem] text-[#686e7d]'>
+//               June 30, 2024 - organic
+//             </span>
+//             <a
+//               href='blog-detail-left-sidebar.html'
+//               className='font-Poppins tracking-[0.03rem] text-[16px] font-medium leading-[1.3] text-[#3d4750]'
+//             >
+//               Marketing Guide: 5 Steps to Success.
+//             </a>
+//           </div>
+//         </div>
+//       ))}
+//     </div>
+//   );
+// }
+
+// export default Insta;

@@ -10,6 +10,9 @@ export default {
         poppins: ['Poppins', 'sans-serif'],
         quicksand: ['Quicksand', 'sans-serif'],
       },
+      screens: {
+        'mobile-l': '425px', // Add a custom breakpoint for larger mobile screens
+      },
     },
   },
   plugins: [

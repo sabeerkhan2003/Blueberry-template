@@ -14,10 +14,10 @@ const categories = [
 
 function Explore() {
     return (
-        <div className='lg:flex lg:justify-center lg:gap-16 lg:ml-12 my-28 relative '>
+        <div className='lg:flex lg:justify-center lg:gap-0 lg:ml-5 my-28 relative'>
             <img src={big} alt="mainpic" className='lg:size-[450px] rounded-3xl hidden lg:block' />
             <div className='lg:w-1/2 '>
-                <div className='font-quicksand lg:ml-5 hidden lg:block'>
+                <div className='font-quicksand lg:ml-5 hidden lg:block  lg:w-fit'>
                     <h1 className='lg:text-[100px] lg:font-semibold lg:text-transparent text-stroke leading-none lg:my-8 '>
                         <span>Explore</span> <span>Categories</span>
                     </h1>

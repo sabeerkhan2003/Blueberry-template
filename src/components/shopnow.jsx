@@ -7,8 +7,8 @@ function Shopnow() {
     return (
         <div className='overflow-hidden'>
             <div className='bg-[#F4DAB4] mt-32 '></div>
-            <div className='flex justify-center flex-wrap mt-'>
-                <div className='bg-[#FBF2E5] text-center m-8 h-[350px] w-80 rounded-lg lg:w-[480px] lg:h-[250px] lg:p-8 lg:flex lg:items-center lg:justify-center lg:gap-3'>
+            <div className='flex justify-center flex-wrap lg:gap-4 '>
+                <div className='bg-[#FBF2E5] text-center m-8 lg:m-0 h-[350px] w-80 rounded-lg lg:w-[500px] lg:h-[250px] lg:p-8 lg:flex lg:items-center lg:justify-center lg:gap-3'>
                     <div className='flex justify-center'>
                         <img src={card1} alt="" className='size-52 ' />
                     </div>
@@ -19,7 +19,7 @@ function Shopnow() {
 
                     </div>
                 </div>
-                <div className='bg-[#FFE8EE] text-center m-8 h-[350px] w-80 rounded-lg lg:w-[480px] lg:h-[250px] lg:p-8 lg:flex lg:items-center lg:justify-center lg:gap-3'>
+                <div className='bg-[#FFE8EE] text-center m-8 lg:m-0 h-[350px] w-80 rounded-lg lg:w-[500px] lg:h-[250px] lg:p-8 lg:flex lg:items-center lg:justify-center lg:gap-3'>
                     <div className='flex justify-center'>
                         <img src={card2} alt="" className='size-52 ' />
                     </div>
