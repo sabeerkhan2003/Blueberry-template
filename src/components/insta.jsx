@@ -77,19 +77,19 @@ function Insta() {
       <div
         ref={scrollContainerRef}
         onDoubleClick={handleDoubleClick}
-        className='flex overflow-x-auto lg:w-full md:gap-8 mx-10 gap-9  relative justify-start md:m-16 lg:m-8 scrollbar-hide cursor-pointer mt-10'
+        className='flex overflow-x-scroll lg:w-auto md:gap-8 lg:gap-8    gap-12  relative justify-center md:justify-start lg:justify-start md:m-12 lg:m-8 scrollbar-hide cursor-pointer mt-10'
         style={{
           scrollbarWidth: 'none',
           msOverflowStyle: 'none',
         }}
       >
         {images.map((item, index) => (
-          <div key={index} className='relative flex-shrink-0 '>
+          <div key={index} className='relative flex-shrink-0 left-48 md:left-0  '>
             {/* Image Section */}
             <img
               src={item}
               alt={`Image ${index + 1}`}
-              className='rounded-3xl  h-[250px] w-[300px] object-cover'
+              className='rounded-3xl  h-[250px] w-[340px] md:w-[320px] lg:w-[290px] object-cover '
             />
   
             {/* Banner Section */}
