@@ -77,7 +77,7 @@ function Insta() {
       <div
         ref={scrollContainerRef}
         onDoubleClick={handleDoubleClick}
-        className='flex overflow-x-auto lg:w-[1300px] md:gap-8 mx-8  gap-8  relative justify-start md:m-16 lg:m-8 scrollbar-hide cursor-pointer mt-10'
+        className='flex overflow-x-auto lg:w-full md:gap-8 mx-10 gap-9  relative justify-start md:m-16 lg:m-8 scrollbar-hide cursor-pointer mt-10'
         style={{
           scrollbarWidth: 'none',
           msOverflowStyle: 'none',
