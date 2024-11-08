@@ -4,7 +4,7 @@ import ss from "../assets/hero/ss.png"
 
 function Hero() {
   return (
-    <div className='bg-[#F8F8FB] pb-5'>
+    <div className='bg-[#F8F8FB] pb-5' >
     <div className='mt-6 flex flex-col-reverse m-5 lg:flex lg:flex-row lg:justify-center lg:gap-[10%] '>
       <div className='font-poppins ml-4 flex flex-col gap-3 lg:justify-center'>
         <p className='text-[#777777] text-center lg:text-start lg:text-lg'>Flat 30% Off</p>
@@ -16,7 +16,8 @@ function Hero() {
       </div>
 
       <div className='md:flex md:justify-center'>
-        <img src={flower} className='md:m-0 lg:size-[90%]' ></img>
+        <img src={flower} className='md:m-0 lg:size-[90%]' />
+        
       </div>
       
     </div>

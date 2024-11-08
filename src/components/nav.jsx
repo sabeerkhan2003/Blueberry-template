@@ -46,7 +46,7 @@ function Nav() {
     return (
         <>
             {/* nav1 */}
-            <div className='lg:flex lg:flex-row lg:items-center lg:justify-center lg:gap-[8%] lg:mt-4 flex flex-col md:flex-row md:gap-5'>
+            <div className='lg:flex lg:flex-row lg:items-center lg:justify-center lg:gap-[8%] lg:mt-4 flex flex-col md:flex-row md:gap-5' >
                 <div className='lg:flex lg:gap-12 mt-4 relative lg:static md:flex md:h-12 md:justify-around'>
                     <img src={logo} alt="Logo" className='ml-6 lg:ml-0' />
                     <AiOutlineAppstore className='lg:hidden text-[#6C7FD8] absolute lg:static right-5 top-2 size-8 md:left-[38%]' />
@@ -83,7 +83,7 @@ function Nav() {
             <hr className='mt-5'></hr>
 
             {/* nav2 */}
-            <div className='flex items-center justify-around mt-5 relative'>
+            <div className='flex items-center justify-around mt-5 relative ' data-aos="fade-up">
                 <ul className='hidden lg:flex lg:items-center font-poppins gap-10'>
                     <li> <AiOutlineAppstore className='text-[#6C7FD8] size-8' /></li>
                     <li>Home</li>

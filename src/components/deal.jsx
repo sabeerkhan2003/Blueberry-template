@@ -1,7 +1,11 @@
 import React from 'react'
 import CountdownTimer from '../pages/timer'
 import pro1 from "../assets/deal/1.jpg"
+import pro2 from "../assets/deal/2.jpg"
+import pro3 from "../assets/deal/3.jpg"
+import pro4 from "../assets/deal/4.jpg"
 import HalfRating from './rating'
+
 
 function Deal() {
     return (
@@ -40,10 +44,10 @@ function Deal() {
                         </div>
                         <p className='text-[#686E7D] font-quicksand text-[16px]'>1 Pack</p>
                     </div>
-                </div>
+                </div>  
                 <div className='border-2 rounded-lg w-64 flex flex-col gap-1 '>
                     <div className='relative'>
-                        <img src={pro1} alt="" className='h-64 font-quicksand' />
+                        <img src={pro2} alt="" className='h-64 font-quicksand' />
                         <div className='absolute top-0 left-3  text-[#757A88] font-semibold '>
                             <p>N</p>
                             <p>E</p>
@@ -65,7 +69,7 @@ function Deal() {
                 </div>
                 <div className='border-2 rounded-lg w-64 flex flex-col gap-1 '>
                     <div className='relative'>
-                        <img src={pro1} alt="" className='h-64 font-quicksand' />
+                        <img src={pro3} alt="" className='h-64 font-quicksand' />
                         <div className='absolute top-0 left-3  text-[#757A88] font-semibold '>
                             <p>N</p>
                             <p>E</p>
@@ -87,7 +91,7 @@ function Deal() {
                 </div>
                 <div className='border-2 rounded-lg w-64 flex flex-col gap-1 '>
                     <div className='relative'>
-                        <img src={pro1} alt="" className='h-64 font-quicksand' />
+                        <img src={pro4} alt="" className='h-64 font-quicksand' />
                         <div className='absolute top-0 left-3  text-[#757A88] font-semibold '>
                             <p>N</p>
                             <p>E</p>

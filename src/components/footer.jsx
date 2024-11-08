@@ -57,9 +57,9 @@ function Footer() {
   };
 
   return (
-    <div className="">
-      <div className="mt-36 lg:flex lg:justify-center lg:ml- w-full lg:gap-12">
-        <div className=" lg:w-[25%] lg:ml-28 ">
+    <div className="bg-[#F8F8FB]">
+      <div className=" lg:flex lg:justify-center lg:pt-8 w-full lg:gap-12">
+        <div className=" lg:w-[25%] lg:ml-28 md:pt-5 pt-5 lg:pt-0 ">
           <img className="ml-5 mt-5" src={logo} alt="logo" />
           <p className="text-[#686E7D]  mx-3 lg:w-60 ml-5 font-poppins text-sm tracking-wider my-6">
             BlueBerry is the biggest market of grocery products. Get your daily needs from our store.
@@ -175,7 +175,7 @@ function Footer() {
 
         {/* Footer2 */}
       </div>
-      <div className="flex flex-col justify-center gap-2 lg:gap-[12%] mb-1 lg:flex lg:flex lg:flex-row ">
+      <div className="flex flex-col justify-center gap-2 lg:gap-[12%] mb-1 lg:flex lg:flex-row ">
         <span className="text-[#4B5966] text-center mx-10 lg:mx-0">
           Copyright &copy;2024 <bb className="text-[#6C7FD8]">BlueBerry</bb> all rights reserved.
         </span>

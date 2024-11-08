@@ -9,3 +9,53 @@
 //                     }
 //                 }
 //             `}</style>
+
+
+
+
+
+// function Insta() {
+//     const images = [i1, i2, i3, i4,i2,i1,i3];
+//     const scrollContainerRef = useRef(null);
+  
+//     useEffect(() => {
+//       const scrollContainer = scrollContainerRef.current;
+//       let currentIndex = 0;
+  
+//       const intervalId = setInterval(() => {
+//         if (scrollContainer) {
+//           currentIndex++;
+//           if (currentIndex >= images.length) {
+//             currentIndex = 0;
+//           }
+//           // Scroll to the next image smoothly
+//           scrollContainer.scrollTo({
+//             left: currentIndex * 450, // Adjust based on image width
+//             behavior: 'smooth',
+//           });
+//         }
+//       }, 1000); // 3 seconds interval
+  
+//       // Cleanup the interval on component unmount
+//       return () => clearInterval(intervalId);
+//     }, [images.length]);
+  
+//     return (
+//       <div
+//         ref={scrollContainerRef}
+//         className='flex overflow-hidden w-[px]'
+//       >
+//         {images.map((item, index) => (
+//           <img
+//             key={index}
+//             src={item}
+//             alt={`Image ${index + 1}`}
+//             className="rounded-3xl m-2 h-[350px] w-[450px] object-cover"
+//           />
+//         ))}
+//       </div>
+//     );
+//   }
+  
+//   export default Insta;
+  
