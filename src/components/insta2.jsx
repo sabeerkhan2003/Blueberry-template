@@ -10,8 +10,8 @@ function Insta2() {
 
     const images=[img1,img2,img3,img4,img5,img6,img1]
   return (
-    
-    <div className=' flex w-full gap-8 lg:gap-0 lg:w-auto overflow-scroll mt-20 pl-5 mobile-l:pl-8 md:pl-11 lg:pl-2 lg:mx-10 xl:mx-32 xl:gap-8' 
+    <div className='relative'>
+    <div className=' flex w-full gap-8 lg:gap-0 lg:w-auto overflow-scroll mt-20 pl-5 mobile-l:pl-8 md:pl-11 lg:pl-2 lg:mx-10 xl:mx-32 xl:gap-8 ' 
     style={{
         scrollbarWidth: 'none',
         msOverflowStyle: 'none',
@@ -24,9 +24,9 @@ function Insta2() {
     >
         
         {images.map((item,index)=>(<img src={item} alt="#" className='rounded-3xl w-[150px] h-[150px] mobile-l:w-[100px] mobile-l:h-[100px] md:w-[150px] md:h-[150px] lg:w-[160px] lg:h-[160px] lg:mr-7 object-cover' />))}
-
-
     </div>
+     <h3 className='text-[#3D4750] text-[25px] font-quicksand bg-white px-6 py-2 rounded-3xl absolute left-[33%] bottom-[26%] mobile-l:left-[36.5%] md:bottom-[30%] md:left-[44%]'> #Insta</h3>
+     </div>
   )
 }
 

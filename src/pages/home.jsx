@@ -10,6 +10,7 @@ import 'aos/dist/aos.css'
 import Brands from '../components/brands'
 import Insta from '../components/insta'
 import Insta2 from '../components/insta2'
+import Testimonials from '../components/testimonials'
 
 
 function Home() {
@@ -21,6 +22,7 @@ function Home() {
             <Deal/>
             <Shopnow/>
             <Vendors/>
+            <Testimonials/>
             <Insta/>
             <Insta2/>
             <Brands/>
