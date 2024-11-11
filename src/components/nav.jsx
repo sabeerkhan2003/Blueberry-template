@@ -57,7 +57,7 @@ function Nav() {
     return (
         <>
             {appmenu && (
-                <div className='lg:flex justify-center'>
+                <div className='flex justify-center'>
                 <div onClick={handleappmenu} className="fixed inset-0 bg-black opacity-50 z-10 "></div>
                 <Sidebar/>
                 </div>
