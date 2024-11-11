@@ -19,16 +19,16 @@ function Home() {
         <>
             <Nav />
             
-             {/* <Hero/>
+             <Hero/>
             <Explore /> 
             <Deal/>
             <Shopnow/>
-            <Vendors/> */}
+            <Vendors/>
             <Testimonials/>
-            {/* <Insta/>
+            <Insta/>
             <Insta2/>
             <Brands/>
-            <Footer/> */}
+            <Footer/>
         </>
     )
 }
