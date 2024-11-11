@@ -6,8 +6,14 @@ import { BsCart3 } from "react-icons/bs";
 import { IoIosArrowDown } from "react-icons/io";
 import { AiOutlineAppstore } from "react-icons/ai";
 import "@fontsource/poppins";
+import { Link } from '@mui/material';
+import Sidebar from './sidebar';
 
 function Nav() {
+
+    const [appmenu, setAppmenu] = useState(false)
+
+
     const [dropdownsVisible, setDropdownsVisible] = useState({
         vegetable: false,
         location: false
@@ -27,6 +33,11 @@ function Nav() {
         { loc: "Udaipur" },
     ];
 
+    function handleappmenu() {
+        setAppmenu(!appmenu)
+        
+    }
+
     const toggleDropdown = (type) => {
         // Close the dropdowns if they are already open, else open the clicked one
         setDropdownsVisible(prevState => ({
@@ -45,11 +56,26 @@ function Nav() {
 
     return (
         <>
+            {appmenu && (
+                <div className='lg:flex justify-center'>
+                <div onClick={handleappmenu} className="fixed inset-0 bg-black opacity-50 z-10 "></div>
+                <Sidebar/>
+                </div>
+            )}
             {/* nav1 */}
-            <div className='lg:flex lg:flex-row lg:items-center lg:justify-center lg:gap-[8%] lg:mt-4 flex flex-col md:flex-row md:gap-5' >
+            <div  className='lg:flex lg:flex-row lg:items-center lg:justify-center lg:gap-[8%] lg:mt-4 flex flex-col md:flex-row md:gap-5' >
                 <div className='lg:flex lg:gap-12 mt-4 relative lg:static md:flex md:h-12 md:justify-around'>
                     <img src={logo} alt="Logo" className='ml-6 lg:ml-0' />
-                    <AiOutlineAppstore className='lg:hidden text-[#6C7FD8] absolute lg:static right-5 top-2 size-8 md:left-[38%]' />
+
+
+                    <AiOutlineAppstore onClick={handleappmenu} className='lg:hidden text-[#6C7FD8] absolute lg:static right-5 top-2 size-8 md:left-[38%]' />
+
+
+
+
+
+
+
                     <div className='flex md:justify-center md:items-center top-0'>
                         <div className='relative lg:flex border-2 p-3 rounded-l-lg items-center hidden lg:h-12'>
                             <input placeholder='Vegetables' readOnly onClick={() => toggleDropdown("vegetable")} className="cursor-pointer outline-none" />
@@ -85,7 +111,7 @@ function Nav() {
             {/* nav2 */}
             <div className='flex items-center justify-around mt-5 relative ' data-aos="fade-up">
                 <ul className='hidden lg:flex lg:items-center font-poppins gap-10'>
-                    <li> <AiOutlineAppstore className='text-[#6C7FD8] size-8' /></li>
+                    <li> <AiOutlineAppstore onClick={handleappmenu} className='text-[#6C7FD8] size-8' /></li>
                     <li>Home</li>
                     <li>Categories</li>
                     <li>Products</li>

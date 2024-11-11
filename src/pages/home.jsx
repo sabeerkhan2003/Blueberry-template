@@ -11,22 +11,24 @@ import Brands from '../components/brands'
 import Insta from '../components/insta'
 import Insta2 from '../components/insta2'
 import Testimonials from '../components/testimonials'
+import Sidebar from '../components/sidebar'
 
 
 function Home() {
     return (
         <>
             <Nav />
-            <Hero/>
-            <Explore />
+            
+             {/* <Hero/>
+            <Explore /> 
             <Deal/>
             <Shopnow/>
-            <Vendors/>
+            <Vendors/> */}
             <Testimonials/>
-            <Insta/>
+            {/* <Insta/>
             <Insta2/>
             <Brands/>
-            <Footer/>
+            <Footer/> */}
         </>
     )
 }

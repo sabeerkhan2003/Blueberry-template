@@ -51,7 +51,7 @@ function Testimonials() {
     }, [currentIndex]);
 
     return (
-        <div className='h-auto lg:h-[500px] md:h-[400px] relative'>
+        <div className='h-auto lg:h-[500px] md:h-[400px] mobile-l:w-[420px]  md:w-auto relative '>
             {/* Background decorative images */}
             <img src={bg1} alt="" className='hidden lg:block md:block w-[50px] h-[50px] absolute left-[15%] top-[20%] rounded-2xl object-cover -rotate-12' />
             <img src={bg2} alt="" className='hidden lg:block md:block w-[40px] h-[40px] absolute left-[15%] top-[60%] rounded-2xl object-cover rotate-12 blur-sm' />
@@ -67,7 +67,7 @@ function Testimonials() {
 
             {/* Scrollable Testimonials Container */}
             <div
-                className='w-full overflow-x-auto flex lg:overflow-x-hidden gap-12 mx-2 md:mx-3 md:gap-9 lg:mx-0  px-8 lg:px-0 lg:gap-10 lg:absolute lg:left-[25%] lg:top-[23%] lg:w-[40%]  md:w-[50%] md:absolute md:left-44 md:top-28 md:px-2'
+                className='w-full overflow-x-auto flex lg:overflow-x-hidden mobile-l:gap-[0%] mobile-l:pl-0 lg:w-[60%] lg:gap-0   mobile-l: md:mx-3 md:gap-5  px-0   lg:absolute lg:left-[21%] lg:top-[18%]  md:w-[60%] md:absolute md:left-44 md:top-28 md:px-2'
                 ref={testimonialRef}
                 style={{
                     scrollbarWidth: 'none',
@@ -75,7 +75,7 @@ function Testimonials() {
                 }}
             >
                 {testimonials.map((testimonial, index) => (
-                    <div key={index} className='flex-shrink-0 w-[350px] lg:w-[500px] p-4 rounded-lg'>
+                    <div key={index} className='flex-shrink-0 w-fit m-5 lg:w-full p-4 mobile-l:w-fit rounded-lg'>
                         <div className='flex items-end gap-4'>
                             <img src={testimonial.img} alt="" className='w-[50px] h-[50px] lg:w-[200px] lg:h-[200px] rounded-2xl lg:rounded-3xl' />
                             <div className='flex flex-col lg:h-auto lg:w-[800px] lg:gap-4'>
@@ -83,7 +83,7 @@ function Testimonials() {
                                     <h4 className='font-quicksand text-[#3d4750] text-[18px] lg:text-[20px] font-bold'>{testimonial.name}</h4>
                                     <span className='text-[12px] text-[#777777]'>{testimonial.role}</span>
                                 </div>
-                                <p className='text-[#686E7D] text-[14px] lg:text-[12px] mt- leading-relaxed lg:border-2 lg:border-gray-100 rounded-3xl lg:w-[120%] lg:p-2 hidden lg:block'>
+                                <p className='text-[#686E7D] text-[14px] lg:text-[12px] mt- leading-relaxed lg:border-2 lg:border-gray-100 rounded-3xl lg:w-[80%] lg:p-2 hidden lg:block'>
                                     {testimonial.feedback}
                                 </p>
                             </div>
